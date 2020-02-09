@@ -1,0 +1,21 @@
+Bundle-Name: dp-tag
+Bundle-SymbolicName: dp.tag
+Bundle-Version: 1.0.0
+
+      
+Export-Package: \
+	dp.tag.constants,\
+	javax.servlet.jsp.tagext,\
+	javax.servlet.jsp,\
+	dp.tag.helpers,\
+	dp.tag.tags.*
+
+Import-Package:\
+	*;resolution:=optional
+
+	
+Provide-Capability:\
+		osgi.extender;\
+			osgi.extender="jsp.taglib";\
+			uri="https://dadehpardaz.com/Tags";\
+			version:Version="${Bundle-Version}"
